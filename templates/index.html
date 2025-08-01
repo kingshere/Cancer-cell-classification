@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-group input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .submit-btn input {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn input:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Predictor</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label>Mean Radius:</label>
+                <input type="text" name="mean radius">
+                
+                <label>Mean Texture:</label>
+                <input type="text" name="mean texture">
+
+                <label>Mean Perimeter:</label>
+                <input type="text" name="mean perimeter">
+
+                <label>Mean Area:</label>
+                <input type="text" name="mean area">
+
+                <label>Mean Smoothness:</label>
+                <input type="text" name="mean smoothness">
+
+                <label>Mean Compactness:</label>
+                <input type="text" name="mean compactness">
+
+                <label>Mean Concavity:</label>
+                <input type="text" name="mean concavity">
+
+                <label>Mean Concave Points:</label>
+                <input type="text" name="mean concave points">
+
+                <label>Mean Symmetry:</label>
+                <input type="text" name="mean symmetry">
+
+                <label>Mean Fractal Dimension:</label>
+                <input type="text" name="mean fractal dimension">
+
+                <label>Radius Error:</label>
+                <input type="text" name="radius error">
+
+                <label>Texture Error:</label>
+                <input type="text" name="texture error">
+
+                <label>Perimeter Error:</label>
+                <input type="text" name="perimeter error">
+
+                <label>Area Error:</label>
+                <input type="text" name="area error">
+
+                <label>Smoothness Error:</label>
+                <input type="text" name="smoothness error">
+
+                <label>Compactness Error:</label>
+                <input type="text" name="compactness error">
+
+                <label>Concavity Error:</label>
+                <input type="text" name="concavity error">
+
+                <label>Concave Points Error:</label>
+                <input type="text" name="concave points error">
+
+                <label>Symmetry Error:</label>
+                <input type="text" name="symmetry error">
+
+                <label>Fractal Dimension Error:</label>
+                <input type="text" name="fractal dimension error">
+
+                <label>Worst Radius:</label>
+                <input type="text" name="worst radius">
+
+                <label>Worst Texture:</label>
+                <input type="text" name="worst texture">
+
+                <label>Worst Perimeter:</label>
+                <input type="text" name="worst perimeter">
+
+                <label>Worst Area:</label>
+                <input type="text" name="worst area">
+
+                <label>Worst Smoothness:</label>
+                <input type="text" name="worst smoothness">
+
+                <label>Worst Compactness:</label>
+                <input type="text" name="worst compactness">
+
+                <label>Worst Concavity:</label>
+                <input type="text" name="worst concavity">
+
+                <label>Worst Concave Points:</label>
+                <input type="text" name="worst concave points">
+
+                <label>Worst Symmetry:</label>
+                <input type="text" name="worst symmetry">
+
+                <label>Worst Fractal Dimension:</label>
+                <input type="text" name="worst fractal dimension">
+            </div>
+
+            <div class="submit-btn">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
